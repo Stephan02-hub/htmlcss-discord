@@ -1,6 +1,4 @@
-/*-----------
-    RESET
-------------*/
+
 * {
     
     margin: 0;
@@ -9,9 +7,7 @@
 
 
 
-/*-----------
-    GENERAL
-------------*/
+
 .container {
     max-width: 1200px;
     margin-left: auto;
@@ -38,6 +34,15 @@
     background-color: black;
     color: #fff;
 }
+
+.btn-violet{
+    background-color: rgb(80, 60, 170);
+    color: #fff;
+}
+
+
+
+
 .bg-gray {
     background-color: #d3d3d3;
 }
@@ -48,12 +53,14 @@ body {
 }
 
 h1{
-    font-size: 40px;
+    font-size: 50px;
 }
 
-/*-----------
-    HEADER
-------------*/
+h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
 header {
     color: #fff;
 }
@@ -118,37 +125,42 @@ header {
  margin-bottom: 16px;
 }
 
-/*-----------
-    MAIN
-------------*/
+
 section {
     padding: 50px 0;
-    display: flex;
+    
 }
 
 section:nth-child(2n) {
     background-color: #d3d3d3;
 }
 
-section > .container {
-    display: flex;
-}
 
 section .col-big {
-    width: 60%;
+    width: 65%;
     padding: 50px;
 }
 section .col-small {
-    width: 40%;
+    width: 35%;
+}
+section h2 {
+    width: 100%;
+    margin: 30px 20px;
+    margin-top: 80px;
+}
+
+section:not(:last-child) > .container {
+    display: flex;
+}
+
+section:last-child {
+    text-align: center;
 }
 
 
 
-/*-----------
-    FOOTER
-------------*/
 footer {
-    background-color: #23272a;
+    background-color: rgb(224, 216, 216);
 }
 
 .footer-top {
@@ -157,7 +169,7 @@ footer {
 }
 
 .footer-top > .container {
-    display: flex;
+    
 }
 
 .footer-top .col-small {
@@ -165,7 +177,8 @@ footer {
 }
 .footer-top .col-big {
     width: 70%;
-    display: flex;
+    
+    
 }
 
 .footer-top .col-big > .col-inner {
@@ -189,5 +202,12 @@ footer {
 }
 
 h3{
-    color: blue
+    color: blue;
+    font-size: 30px;
+}
+
+
+h4{
+    color: blue;
+    
 }
